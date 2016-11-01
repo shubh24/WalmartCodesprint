@@ -42,5 +42,5 @@ test_ref = subset(dmy, dmy$train == 0)
 train_ref$train = NULL
 test_ref$train = NULL
 write.table(train_ref, "train_ref.csv", sep = ",", row.names = F, col.names = FALSE)
-write.table(test_ref, "train_ref.csv", sep = ",", row.names = F, col.names = FALSE)
+write.table(test_ref, "test_ref.csv", sep = ",", row.names = F, col.names = FALSE)
 
