@@ -34,6 +34,7 @@ items$tag = NULL
 
 library(caret)
 dmy = data.frame(predict(dummyVars("~.", data=items), newdata = items))
+dmy[is.na(dmy)] = 0
 # items_vectors = with(items, data.frame(item_id, model.matrix(~.-1, items)))
 
 train_ref = subset(dmy, dmy$train == 1)
