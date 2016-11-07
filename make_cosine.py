@@ -1,6 +1,6 @@
 import csv
 import math
-
+import pickle
 def get_cosine(v1, v2):
     v1 = [int(i) for i in v1]
     v2 = [int(i) for i in v2]
