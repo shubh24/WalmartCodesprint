@@ -39,8 +39,9 @@ for test_case in cos_dict:
 
     result.update({str(test_case):str(top_shelves)})
 
-f = open("result.csv", "wb")
+f = open("tags.tsv", "wb")
 f_writer = csv.writer(f, delimiter = "\t", dialect = "excel")
+f_writer.writerow(["item_id", "tag"])
 
 for r_row, r_val in result.items():
     f_writer.writerow([r_row, r_val])
